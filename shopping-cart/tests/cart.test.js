@@ -61,7 +61,7 @@ describe('getTotalItems', () => {
         expect(cartModule.getTotalItems([])).toBe(0);
     });
 
-    test('should should warn if the total quantity exceeds max safe integer', () => {
+    test('should warn if the total quantity exceeds max safe integer', () => {
         cart[0].quantity = Number.MAX_SAFE_INTEGER;
         //cart[1].quantity = Number.MAX_SAFE_INTEGER;
         const expectedMessage = "WARNING: The total quantity exeeds the maximum safe integer! Precision may be lost!";

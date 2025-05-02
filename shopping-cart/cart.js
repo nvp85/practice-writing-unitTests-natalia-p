@@ -1,7 +1,4 @@
-// Write tests for each method in the cart.js module, covering:
-// ■ Positive Tests: Valid inputs producing expected results.
-// ■ Negative Tests: Invalid inputs handled gracefully.
-// ■ Edge Cases: Unusual or extreme values
+
 
 function addItem(cart, item, quantity=1) {
     if (typeof quantity !== "number" || isNaN(quantity) || quantity <= 0 ) {
